@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/styles.css')}}"/>
+    <link rel='stylesheet' href="{{url_for('static',filename='styles/material.indigo-pink.min.css')}}"/>
+    <link rel='icon' href="{{url_for('favicon')}}"/>
+    <title>DNS_Enumerator_(DN-07032022-231916)</title>
+    <!--
+                                                                                                                                                   
+ _|_|_|    _|      _|    _|_|_|      _|_|_|_|                                                                      _|                          
+ _|    _|  _|_|    _|  _|            _|        _|_|_|    _|    _|  _|_|_|  _|_|      _|_|    _|  _|_|    _|_|_|  _|_|_|_|    _|_|    _|  _|_|  
+ _|    _|  _|  _|  _|    _|_|        _|_|_|    _|    _|  _|    _|  _|    _|    _|  _|_|_|_|  _|_|      _|    _|    _|      _|    _|  _|_|      
+ _|    _|  _|    _|_|        _|      _|        _|    _|  _|    _|  _|    _|    _|  _|        _|        _|    _|    _|      _|    _|  _|        
+ _|_|_|    _|      _|  _|_|_|        _|_|_|_|  _|    _|    _|_|_|  _|    _|    _|    _|_|_|  _|          _|_|_|      _|_|    _|_|    _|        
+                                                                                                                                               
+                                                                                                                                               
+    Python-based web application that accepts hostname in the text field and all the dns records are shown. 
+    BY AADITYA RENGARAJAN
+    CREATION TIMESTAMP : 23:19 03/07/22 07 03 2022
+    -->
+    <!-- METAS -->
+    <meta charset="utf-8">
+    <meta content="DNS Enumerator - Python-based web application that accepts hostname in the text field and all the dns records are shown. " name="description" />
+    <meta content="aaditya rengarajan, aadityarengarajan, DNS Enumerator, Python-based web application that accepts hostname in the text field and all the dns records are shown. " name="keywords" />
+    <meta name="revisit-after" content="2 days">
+    <meta name="page-topic" content="Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="page-type" content="Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="copyright" content="Copyright  2021, DNS Enumerator by aadityarengarajan,Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1.5" name="viewport" />
+    <meta name="subject" content="DNS Enumerator | Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="copyright"content="DNS Enumerator by aadityarengajan">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="abstract" content="DNS Enumerator">
+    <meta name="topic" content="DNS Enumerator | Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="summary" content="[HOME] DNS Enumerator | Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="author" content="aadityarengarajan, aaditya@intellx.co.in">
+    <meta name="designer" content="DNS Enumerator">
+    <meta name="reply-to" content="aaditya@intellx.co.in">
+    <meta name="owner" content="aadityarengarajan">
+    <meta name="category" content="Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="og:title" content="DNS Enumerator"/>
+    <meta name="og:site_name" content="DNS Enumerator"/>
+    <meta name="og:description" content="Python-based web application that accepts hostname in the text field and all the dns records are shown. "/>
+    <meta name="og:email" content="support@intellx.co.in"/>
+    <meta name="og:latitude" content="10"/>
+    <meta name="og:longitude" content="80"/>
+    <meta name="og:street-address" content="India"/>
+    <meta name="og:locality" content="India"/>
+    <meta name="og:region" content="India"/>
+    <meta name="og:country-name" content="India"/>
+    <meta name="twitter:title" content="DNS Enumerator">
+    <meta name="twitter:description" content="Python-based web application that accepts hostname in the text field and all the dns records are shown. ">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta content="no" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = yes">
+    <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
+    <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
+    <meta name="mssmarttagspreventparsing" content="true">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="msapplication-navbutton-color" content="blue"/>
+    <meta name="application-name" content="DNS Enumerator | Python-based web application that accepts hostname in the text field and all the dns records are shown. "/>
+    <meta name="msapplication-tooltip" content="Python-based web application that accepts hostname in the text field and all the dns records are shown.  (DNS Enumerator)"/>
+    <!-- END OF METAS -->
+  </head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">DNS Enumerator Tool</span>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content" style="padding:50px;">
+
+
+        <div class="demo-card-square mdl-card mdl-shadow--2dp" style="width:50%;margin:0 auto">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">DNS Lookup</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Enter a valid URL to lookup DNS Records for:<br/><br/>
+    <form action="{{url_for('index')}}" method='GET' style="width:50%;margin:0 auto;">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="url-field" name="domain">
+    <label class="mdl-textfield__label" for="url-field">URL</label>
+  </div>
+</form>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Lookup DNS Records
+    </a>
+  </div>
+</div>
+
+{% if records %}
+<br/><br/><br/><br/>
+
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" style="width:80%;margin:0 auto">
+  <thead>
+    <tr>
+      <th>Record Type</th>
+      <th>Domain Name</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%  for i in records %}
+    <tr>
+      <td>{{i["type"]}}</td>
+      <td>{{domain}}</td>
+      <td>{{i["value"]}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endif %}
+
+
+
+    </div>
+  </main>
+</div>
+  <script src="{{url_for('static',filename='scripts/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+  <script src="{{url_for('static',filename='scripts/material.min.js')}}"></script>
+  </body>
+</html>

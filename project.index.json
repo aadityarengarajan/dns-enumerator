@@ -1,0 +1,11 @@
+{
+    "name": "DNS Enumerator",
+    "description": "Python-based web application that accepts hostname in the text field and all the dns records are shown. ",
+    "created": "07/03/2022",
+    "completed": "true",
+    "modules": [],
+    "hosting": {
+        "hosted": "false"
+    },
+    "code": "DN-07032022-231916"
+}
